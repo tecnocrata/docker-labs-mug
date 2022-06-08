@@ -4,5 +4,7 @@ services:
     build: .
     ports:
       - "5001:5000"
+    volumes:
+      - .:/code
   redis:
     image: "redis:alpine"
